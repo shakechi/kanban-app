@@ -2,8 +2,8 @@ import { NoEmitOnErrorsPlugin } from 'webpack'
 import * as types from './mutation-types'
 
 export default {
-    [types.AUTH_LOGIN] (statem payload) {
-        throw nwe Error('AUTH_LOGN mutation should be implemented')
+    [types.AUTH_LOGIN] (state, payload) {
+        throw new Error('AUTH_LOGN mutation should be implemented')
     },
 
     [types.FETCH_ALL_TASKLIST] (state, payload) {
